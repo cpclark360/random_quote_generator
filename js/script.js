@@ -50,7 +50,8 @@ quotes = [
 bgColors = ["red",
             "blue",
             "orange",
-            "gold"];
+            "gold",
+            "black"];
 
 // 'getRandomQuote' function generating and returning a random quote from 'quotes' array.
 
