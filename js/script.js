@@ -50,10 +50,9 @@ quotes = [
 // 'getRandomQuote' function generating and returning a random quote from 'quotes' array.
 
 function getRandomQuote(array) {
-    randomQuoteNumber = Math.floor(Math.random() * array.length);
-     
+    randomQuoteNumber = Math.floor(Math.random() * array.length); 
     return array[randomQuoteNumber];
-};
+}
 
 
 /***  
