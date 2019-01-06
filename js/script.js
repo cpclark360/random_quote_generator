@@ -65,7 +65,6 @@ function getRandomQuote(array) {
 function printQuote(message) {
       
   div = document.getElementById('quote-box');
-  div.innerHTML = message;
   displayQuote = getRandomQuote(quotes);
 
   message = '<p class="quote">';
@@ -87,7 +86,7 @@ function printQuote(message) {
       null;
   } 
     message += '</p>';
-    return printQuote(message);
+    div.innerHTML = message;  
 }
 
 
