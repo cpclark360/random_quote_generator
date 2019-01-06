@@ -11,7 +11,6 @@ var randomQuoteNumber;
 var displayQuote;
 var message;
 var autoRefresh = setInterval(refresh,20000);
-var bgcolors;
 var randomColors;
 
 
@@ -46,6 +45,12 @@ quotes = [
     }
 ];
 
+// 'bgColors' array stores the name of colors used for the 'rbgColor' function.
+
+bgColors = ["red",
+            "blue",
+            "orange",
+            "gold"];
 
 // 'getRandomQuote' function generating and returning a random quote from 'quotes' array.
 
@@ -53,7 +58,6 @@ function getRandomQuote(array) {
     randomQuoteNumber = Math.floor(Math.random() * array.length); 
     return array[randomQuoteNumber];
 }
-
 
 /***  
 	- 'printQuote' function is using an random quote with objects  from 'getRandomQuote'.
@@ -89,13 +93,18 @@ function printQuote(message) {
     div.innerHTML = message;  
 }
 
+// 'rbgColor()' function generates a random color and changes the background color when the user clicks the HTML 'Show another quote' button. 
+
+function rbgColor() {
+  randomColors = Math.floor(Math.random() * bgColors.length);
+  document.body.style.backgroundColor = bgColors[randomColors];
+}
 
 // Auto-Refreshes Quote every 20 seconds using setInterval Method.
 
 function refresh(){
 	return printQuote();
 }
-
 
 // event listener triggers  a call or "invoke" the 'printQuote' function.
 
