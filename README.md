@@ -16,4 +16,4 @@
 
 # Usage
 
-> Using a web browser preferably Google Chrome or FireFox open the " index.html "
+> Using a web browser preferably Google Chrome or FireFox open " index.html "
