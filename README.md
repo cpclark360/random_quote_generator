@@ -2,6 +2,12 @@
 
 > Displays 1 of 5 quotes that are randomly selected. Quotes can be manually alternated by clicking the "Show another quote" Button, in addition the Quote will be changed every 20 seconds automatically.
 
+# Technology used
+
+- HTML
+- CSS
+- JavaScript
+
 # Directory Tree
 
 ```
